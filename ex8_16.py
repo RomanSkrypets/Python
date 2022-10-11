@@ -1,0 +1,1 @@
+from ex8_15_printing_func import pm as printing
