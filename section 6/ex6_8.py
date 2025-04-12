@@ -13,7 +13,7 @@ animal_2 = {
     'owner' : 'Oleg'
 }
 
-pets = [animal_0,animal_1,animal_2]
+pets = [animal_0, animal_1, animal_2]
 
 for pet in pets:
     print(f"{pet['owner']} has a {pet['animal']}")

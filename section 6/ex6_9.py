@@ -1,6 +1,6 @@
 favourite_places = {
     'roman' : ['river','mountain','lviv'],
-    'stepan' : ['kiev','train','lexemburg'],
+    'stepan' : ['kyiv','train','lexemburg'],
     'oleg' : ['sea', 'island','beach'],
 }
 

@@ -28,4 +28,4 @@ for user_name, user_info in people.items():
     age = f"{user_info['age']}"
     city = f"{user_info['city']}"
 
-    print(f"Hello {full_name}, you'r age: {age}, and you live in {city} city.")
+    print(f"Hello {full_name},\nyour age: {age}, \nand you live in {city} city.")
