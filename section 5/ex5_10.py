@@ -1,10 +1,13 @@
 current_users = ['Roman', 'admin', 'Oleg','Ivan', 'Bogdan', 'Stepan']
-cur = current_users.copy()
-cur = ['roman', 'Admin','oleg','ivan','bogdan','stepan']
-#users = []   #for empty list 
-new_users = ['Galyna', 'Iruna','Artem','Andrew','Ivan','Olga']
+
+new_users = ['Roman', 'Petro','Oleg','John','Yaryna','Igor']
+
+current_users_lower = []
+for user in current_users:
+    current_users_lower.append(user.lower())
+
 for new in new_users:
-    if new in current_users:
-        print(f"{new} you must rename profile")
+    if new.lower() not in current_users_lower:
+        print(f"Welcome {new.title()}")
     else:
-        print(f"Welcome {new}")
+        print(f"{new} name already exist, please rename your user")
