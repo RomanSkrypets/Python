@@ -2,7 +2,7 @@ cinema = "Welcome! How old are you?\n"
 
 active = True
 while active:
-    age = input(cinema)
+    age = int(input(cinema))
     if age == "quit":
         break
     elif int(age) < int(3):
