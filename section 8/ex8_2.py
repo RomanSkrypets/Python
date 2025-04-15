@@ -1,4 +1,4 @@
-def favourite_book(book):
-    print(f"One of my favourite book is {book}")
+def favourite_book(title):
+    print(f"One of my favourite book is {title.title()}")
 
-favourite_book('Sven')
+favourite_book("Jack Sparrow")

@@ -1,7 +1,7 @@
-def show_messages(names):
-    for greeting in names:
-        message = f"{greeting}"
-        print(message)
+def show_messages(messages):
+    for message in messages:
+        msg = f"There is {message.upper()}"
+        print(msg)
 
-greet = ['Hello','Two','Short']
-show_messages(greet)
+messages = ['big pack', 'small pack', 'medium pack', 'strange pack']
+show_messages(messages)

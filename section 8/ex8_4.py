@@ -1,7 +1,6 @@
-def make_shirt(size='L',text="I love Python!"):
-    print(f'Your t-shirt size is: {size.upper()}')
-    print(f'Your text in t-shirt is: {text}')
+def make_shirt(size='L', text='I love Python'):
+    print(f"You choose t-shirt size {size.upper()} and with text: '{text}'")
 
-# make_shirt("m",'World is yours!')
 make_shirt()
-make_shirt(size="m")
+make_shirt('M')
+make_shirt('S','Here is Python')

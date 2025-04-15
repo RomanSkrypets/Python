@@ -1,9 +1,5 @@
-car = ('subaru','suzuki','ford')
+def display_massage(user):
+    print(f"Hello, {user.title()}")
 
-cars  = 'lada'
-if cars not in car:
-    print(f"False. {cars} is not in list")
-else:
-    print(f"{cars} is in list")
-
+display_massage('roman')
 

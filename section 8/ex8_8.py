@@ -1,21 +1,23 @@
-def make_album(name,album):
-    full_name = f"{name} {album}"
-    return full_name.title()
-
+def make_album(name_artist, album, songs=None):
+    full_name={'artist': name_artist,
+               'album': album}
+    if songs:
+        full_name['songs'] = songs
+    return full_name
 
 while True:
-    print("\nPlease tell me mucitians name and album:")
-    print("('Enter q for exit')")
-    f_name = input("Name: ")
-    if f_name == "q":
+    print("\nWrite artist name below")
+    print("\nPrint 'q' to quite")
+
+    name = input("Write artist name: ")
+    if name == 'q':
         break
 
-        
-    f_album = input("Album name: ")
-    if f_album == "q":
+    album = input("Write album: ")
+    if album == 'q':
         break
-    
-    formatted_name = make_album(f_name, f_album)
-    formatted_name
-    print(f"\nHello, {formatted_name}")
 
+    songs = input("Write count of songs: ")
+
+    formatted_artist = make_album(name, album, songs)
+    print(formatted_artist)
